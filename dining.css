@@ -1,0 +1,68 @@
+@font-face {
+    font-family: abster;
+    src: url(font/abster-webfont.woff) format('woff');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: 100vh; /*height는 vh로 지정해주어야함*/
+    background: linear-gradient(rgba(243, 241, 241, 0.8), rgba(155, 154, 154, 0.8)),url(images/room.jpg); /*그라디언트:색을섞다. 최소 두개이상의 색을 섞어야 그라데이션가능*/
+}
+
+.container .header{
+    width: 80%;
+    height: 80px;
+    margin: 0 auto; 
+    display: flex;
+    justify-content: space-between; /*요소가 항상 좌우 끝으로 붙어서 출력이 되게함 header부분인 design은 왼쪽 nav부분은 오른쪽*/
+    align-items:  center;
+}
+
+.container .header h1 a{
+    text-decoration: none; /*텍스트에 기본적으로 밑줄이 그어지는데 none으로 설정해서 없애줌*/
+    color: darkgray;
+    font-family: abster;
+}
+.container .nav ul li{
+    display:  inline-block; /*가로로 정렬되게 함*/
+    margin: 0 10px;  /*li태그 사이에 간격이 주어질 수 있도록 함*/
+    font-weight: bold;
+
+}
+
+.container .nav ul li a{
+    text-decoration: none; /*텍스트에 기본적으로 밑줄이 그어지는데 none으로 설정해서 없애줌*/
+    color: darkgray
+}
+
+.container .nav ul li a:hover{
+    color : #1fdfdf;
+}
+
+.container .hero button{
+    background: none;
+    border:4px  solid rgb(85, 90, 85); /*테두리색상*/
+    color:rgb(44, 43, 43);
+    font-weight: bold;
+    padding: 10px 10px; /*테두리와 글자사이 간격*/
+    border-radius: 20px;  /*테두리가 20px만큼 둥글게 표시*/
+    margin-top: 30px; /*p태그와의 간격띄우기*/
+    margin-left: 20px;
+    outline: none;
+    cursor: pointer;
+    transition: all .4s;  /*애니메이션 효과*/
+} 
+.container .hero input{
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+/* .container .hero button:hover{
+    background-color: rgb(255, 255, 255);
+} */
